@@ -4,4 +4,10 @@
     <inherits name="com.google.gwt.http.HTTP" />
     <inherits name='com.google.gwt.user.theme.clean.Clean'/>
     <entry-point class="com.lushprojects.circuitjs1.client.circuitjs1" />
- </module>
+    
+    <!-- ADD THESE LINES TO FORCE CLEAN AND TRACEABLE JAVASCRIPT -->
+    <set-configuration-property name="compiler.stackMode" value="STRIP" />
+    <set-property name="compiler.emulatedStack" value="true" />
+    <set-configuration-property name="compiler.emulatedStack.recordFileNames" value="true" />
+    <set-configuration-property name="compiler.emulatedStack.recordLineNumbers" value="true" />
+</module>
